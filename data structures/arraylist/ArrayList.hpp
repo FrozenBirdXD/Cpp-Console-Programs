@@ -17,14 +17,15 @@ public:
     ~ArrayList() { delete[] array; }
 
     void add(const T &);
-    void set(int, const T &);
+    void set(const int, const T &);
     void clear();
     bool isEmpty();
     bool contains(const T &);
     int indexOf(const T &);
-    T remove(const T &);
+    T remove(int);
     T get(int);
-    int getSize();
+    int length();
+    int sizeOfArray();
 };
 
 #endif
